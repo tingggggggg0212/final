@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>112570016王婷蓁</title>
+   <script>
+    //全域變數 var n1
+      var num1,num2
+    function showplayer()
+    {//區域變數n1
+      num1 = Math.ceil(Math.random()*6)
+      imgplayer.src = "dice/" + num1 + ".png"
+      winlose()
+    }
+    function showhost()
+    {//區域變數n1
+      num2 = Math.ceil(Math.random()*6)
+      imghost.src = "dice/" + num2 + ".png"
+      winlose()
+    }
+
+    function winlose()
+    {
+      if(num1>num2)
+      {
+        document.getElementById("whowin").innerHTML = "玩家贏"
+      }
+      else if(num1<num2)
+      {
+        document.getElementById("whowin").innerHTML = "莊家贏"
+      }
+      else if(num1==num2)
+      {
+        document.getElementById("whowin").innerHTML = "平手"
+      }
+
+    }
+    </script> 
+
+  </head>
+  <body>
+    <h1 class="text-center">112570016王婷蓁，期末考</h1>
+    <div class="container">
+        <div class="row">
+            <a href="index.html" class="btn btn-warning col-2 offset-2">首頁</a>
+            <a href="a1.html" class="btn btn-warning col-2 offset-1">第1題</a>
+            <a href="a2.html" class="btn btn-warning col-2 offset-1">第2題</a>
+        
+        </div>
+        <div class="row">    
+            <a href="a3.html" class="btn btn-primary col-2 offset-1">第3題</a>
+            <a href="a4.html" class="btn btn-primary col-2 offset-1">第4題</a>
+            <a href="a5.html" class="btn btn-primary col-2 offset-1">第5題</a>
+            <a href="a6.html" class="btn btn-primary col-2 offset-1">第6題</a>
+        </div>
+    </div>
+    <hr>
+    <h1 class="text-center">玩家莊家比骰子</h1>
+    <div class="container">
+      <div class="row">
+        <img id="imgplayer" onclick="showplayer()" src="dice/0.gif" class="col-3 offset-1">
+        <img id="imghost" onclick="showhost()" src="dice/0.gif" class="col-3 offset-4">
+      </div>
+      <div class="row">
+        <label class="bg-warning col-3 offset-1 text-center">玩家</label>
+        <h1 id="whowin" class="col-4 text-center text-danger"></h1>
+        <label class="bg-warning col-3 text-center">莊家</label>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

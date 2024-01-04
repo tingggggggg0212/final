@@ -1,0 +1,70 @@
+<?php
+ $a= $_POST["s1"];
+ $b= $_POST["s2"];
+ $c= $_POST["s3"];
+?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>112570016王婷蓁</title>
+  </head>
+  <body>
+    <h1 class="text-center">112570016王婷蓁，期末考</h1>
+    <div class="container">
+        <div class="row">
+            <a href="index.html" class="btn btn-warning col-2 offset-2">首頁</a>
+            <a href="a1.html" class="btn btn-warning col-2 offset-1">第1題</a>
+            <a href="a2.html" class="btn btn-warning col-2 offset-1">第2題</a>
+        
+        </div>
+        <div class="row">    
+            <a href="a3.html" class="btn btn-primary col-2 offset-1">第3題</a>
+            <a href="a4.html" class="btn btn-primary col-2 offset-1">第4題</a>
+            <a href="a5.html" class="btn btn-primary col-2 offset-1">第5題</a>
+            <a href="a6.html" class="btn btn-primary col-2 offset-1">第6題</a>
+        </div>
+    </div>
+    <hr>
+    <h1 class="text-center">註冊會員，傳到後端php</h1>
+    <form method="post" action="p2.php">
+      <div class="container">
+        <div class="row">
+          <h5 class="offset-3">會員名稱<input value="<?php echo $a; ?>" name="s1" class="col-3 offset-1" type="text"></h5>
+        </div>
+        <div class="row">
+          <h5 class="offset-3">會員密碼<input value="<?php echo $b; ?>" name="s2" class="col-3 offset-1" type="password"></h5>
+        </div>
+        <div class="row">
+          <h5 class="offset-3">會員生日<input value="<?php echo $c; ?>" name="s3" class="col-3 offset-1" type="date"></h5>
+        </div>
+          
+        <button class="offset-4 col-3" type="submit" class="col-3">送出</button>
+        <h1 class="text-danger">
+            <?php echo $a; ?>你已經註冊成功<br>
+            你的密碼是<?php echo $b; ?><br>
+            你的生日是<?php echo $c; ?>
+        </h1>
+      </div>
+    </form>
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
